@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-//yeah
+
 public class Main {
     public static void main(String[] args) {
 
@@ -21,7 +21,7 @@ public class Main {
             System.out.println("1. View all products");
             System.out.println("2. Add product");
             System.out.println("3. Update price");
-            System.out.println("4. Update stock");
+            System.out.println("4. Add additional stock");
             System.out.println("5. Check stock");
             System.out.println("6. Search product");
             System.out.println("7. See total stock value");
@@ -122,7 +122,7 @@ public class Main {
 
     public static void updateStock(ArrayList <Product> products, Scanner sc){
 
-        System.out.print("What product would you like to update the stock? ");
+        System.out.print("What product would you like to update the stock? This number will add onto the existing stock ");
         String name = sc.nextLine();
 
         System.out.println("Type new stock ");
